@@ -1,0 +1,121 @@
+$orange:#F47321;
+$green:#005030;
+
+.bg-orange{
+  background-color: $orange;
+}
+
+.bg-green{
+  background-color: $green;
+}
+
+.text-white{
+  color: white;
+}
+
+.grid-container{
+  display: grid;
+}
+.three-column{
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.text-center{
+  text-align: center;
+}
+
+body {
+   font-family: "Arial", Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+.hide-on-mobile {
+display:none;
+}
+}
+
+@media (min-width: 1024 px) {
+  .two-column{
+    grid-template-columns: 70% 30%;
+  }
+}
+
+@media (min-width: 992px) {
+.hide-on-desktop {
+display: none;
+}
+}
+
+
+.custom-select{
+  width: 70%;
+}
+
+
+.button {
+   background-color: $green;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+
+}
+
+table.t_data{
+    /* border: 1px; - **EDITED** - doesn't seem like influences here */
+    background-color: #080;
+    border-spacing: 1px;
+    margin: 0 auto 0 auto;
+}
+
+table.t_data, , th, td{
+  border: 1px solid black;
+}
+
+table.t_data thead th, table.t_data thead td
+{
+
+
+    // border: #080 0px solid;/* - **EDITED** - doesn't seem like influences here */
+    padding: 5px;
+    margin: 1px;
+}
+table.t_data tbody th, table.t_data tbody td
+{
+    background-color: #fff;
+    // border: #080 0px solid; /*- **EDITED** - doesn't seem like influences here */
+    padding: 2px;
+}
+
+
+.circle:before {
+  content: ' \25CF';
+  font-size: 30px;
+  color: green;
+}
+
+.circle2:before {
+  content: ' \25CF';
+  font-size: 30px;
+  color: red;
+}
+
+.circle3:before {
+  content: ' \25CF';
+  font-size: 30px;
+  color: yellow;
+}
+
+.button1 {
+   background-color: grey;
+   border: none;
+   color: black;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 10px;
+
+}
