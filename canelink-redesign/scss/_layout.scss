@@ -16,6 +16,15 @@
   }
 
 
+  .wrapper {
+     display: grid;
+     grid-gap: 20px;
+     grid-template-columns: 1fr;
+     grid-template-areas:
+         "search"
+  }
+
+
   img {
     display: inline;
     height: 27px;
@@ -31,13 +40,17 @@
     padding-left: 20px;
   }
 
-   .wrapper{
-      display: grid;
-      grid-gap: 20px;
-      grid-template-columns: 1fr;
-      grid-template-areas:
-          "search"
-   }
+  h1 {
+    border-bottom: 1px solid #979797;
+  }
+
+//button Class
+// {
+//   background: color;
+//   padding:
+//   color:
+// }
+
 
 
 
