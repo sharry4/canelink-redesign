@@ -5,158 +5,163 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <title>canelink</title>
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <header>
 
-    <div class="nav-mobile hide-on-desktop bg-orange text-white grid-container four-column">
-      <div class="text-center"> Home </div>
-      <div>Image</div>
-    </div>
+  <div class="container">
 
+    <header>
 
-    <div class="nav-desktop hide-on-mobile bg-orange text-white grid-container four-column">
-      <div>Image</div>
-      <div class="text-center"> Home | Student Center | More</div>
-      <div class="bg-green text-white">
-        Academics > Class Search
+      <div class="nav mobile hide-on-desktop bg-orange"><!-- grid-container four-column -->
+        <i class="fas fa-bars"></i>
+        <img src="img/um_logo.png" alt="UM logo">
       </div>
-    </div>
-
-  </header>
 
 
+      <div class="nav desktop hide-on-mobile bg-orange text-white grid-container four-column">
+        <img src="img/um_logo.png" alt="UM logo">
+        <div class="text-center"> Home | Student Center | More</div>
+        <div class="bg-green text-white">
+          Academics > Class Search
+        </div>
+      </div>
 
+    </header>
 
+    <div class="wrapper">
 
-  <div class="grid-container two-column">  <!-- div needs fix -->
+        <div class="search-options">
 
-      <div class="basic-search">
+          <div class="basic-search">
 
-          <h1>Class Information</h1>
-          <div>
-              Term
-              <br><select class="custom-select">
-                       <option value="Spring2018">Spring 2018</option>
-                       <option value="Fall2017">Fall 2017</option>
-                       <option value="Spring2018">Spring 2018</option>
-                       <option value="Summer2018">Summer 2018</option>
+              <h1>Class Information</h1>
+              <div>
+                  Term
+                  <br><select class="custom-select">
+                           <option value="Spring2018">Spring 2018</option>
+                           <option value="Fall2017">Fall 2017</option>
+                           <option value="Spring2018">Spring 2018</option>
+                           <option value="Summer2018">Summer 2018</option>
+                        </select>
+              </div>
+              <div>
+                Subject
+                  <br><select>
+                        <option value="CIM">CIM</option>
+                      </select>
+              </div>
+
+              <div>
+                Class number
+                <br><select>
+                        <option value=>795</option>
+                     </select>
+              </div>
+
+              <div>Academic Career
+                <br><select>
+                       <option value="Spring2018">Any Academic Career</option>
+                       <option value="Spring2018">Graduate</option>
                     </select>
+              </div>
+
+              <div>
+                <label class="container">
+                       <input type="checkbox">
+                       <span class="checkmark"></span>
+                       </label> Show open class only
+              </div>
+
+              <div class="button">Clear</div>
+              <div class="button">Search</div>
+
           </div>
-          <div>
-            Subject
+
+          <div class="additional-search">
+
+              <h1>Additional Search</h1>
+
+              <div class="slider">
+                 Time Range
+                 <br><input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              </div>
+
+              <div class="day-selection">
+                 <p>Day of Week</p>
+
+                  <label class="container">
+                         <input type="checkbox">
+                         <span class="checkmark"></span>
+                  </label>
+                  <label class="container">
+                         <input type="checkbox">
+                         <span class="checkmark"></span>
+                  </label>
+                  <label class="container">
+                         <input type="checkbox">
+                         <span class="checkmark"></span>
+                         </label>
+                  <label class="container">
+                         <input type="checkbox">
+                         <span class="checkmark"></span>
+                  </label>
+                  <label class="container">
+                         <input type="checkbox">
+                         <span class="checkmark"></span>
+                  </label>
+                  <label class="container">
+                         <input type="checkbox">
+                         <span class="checkmark"></span>
+                         </label>
+                  <label class="container">
+                         <input type="checkbox">
+                         <span class="checkmark"></span>
+                  </label>
+
+                  <div> MON TUE WED THU FRI SAT SUN</div>
+              </div>
+
+            <div>
+              Campus/Location
               <br><select>
-                    <option value="CIM">CIM</option>
-                  </select>
-          </div>
+                 <option value="Spring2018">Any Campus/Location</option>
+              </select>
+            </div>
 
-          <div>
-            Class number
-            <br><select>
-                    <option value=>795</option>
-                 </select>
-          </div>
-
-          <div>Academic Career
-            <br><select>
-                   <option value="Spring2018">Any Academic Career</option>
-                   <option value="Spring2018">Graduate</option>
+            <div>
+              Building
+                <br><select>
+                   <option value="Spring2018">Any building</option>
                 </select>
+            </div>
+
           </div>
 
-          <div>
-            <label class="container">
-                   <input type="checkbox">
-                   <span class="checkmark"></span>
-                   </label> Show open class only
-          </div>
-
-          <div class="button">Clear</div>
-          <div class="button">Search</div>
-
-      </div>
-
-
-      <div class="additional-search">
-
-          <h1>Additional Search</h1>
-
-          <div class="slider">
-             Time Range
-             <br><input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-          </div>
-
-          <div class="day-selection">
-             <p>Day of Week</p>
-
-              <label class="container">
-                     <input type="checkbox">
-                     <span class="checkmark"></span>
-              </label>
-              <label class="container">
-                     <input type="checkbox">
-                     <span class="checkmark"></span>
-              </label>
-              <label class="container">
-                     <input type="checkbox">
-                     <span class="checkmark"></span>
-                     </label>
-              <label class="container">
-                     <input type="checkbox">
-                     <span class="checkmark"></span>
-              </label>
-              <label class="container">
-                     <input type="checkbox">
-                     <span class="checkmark"></span>
-              </label>
-              <label class="container">
-                     <input type="checkbox">
-                     <span class="checkmark"></span>
-                     </label>
-              <label class="container">
-                     <input type="checkbox">
-                     <span class="checkmark"></span>
-              </label>
-
-              <div> MON TUE WED THU FRI SAT SUN</div>
-          </div>
-
-        <div>
-          Campus/Location
-          <br><select>
-             <option value="Spring2018">Any Campus/Location</option>
-          </select>
         </div>
 
-        <div>
-          Building
-            <br><select>
-               <option value="Spring2018">Any building</option>
-            </select>
-        </div>
+        <aside class="academics desktop">Academics
 
-      </div>
+            <table class="t_data">
+              <thead style="padding:1px"></thead>
+              <tbody>
+                <tr><td>Shopping Cart</td></tr>
+                <tr><td>Course History</td></tr>
+                <tr><td>Course Catalog</td></tr>
+                <tr><td>Enroll</td></tr>
+                <tr><td>Academic Requirements</td></tr>
+                <tr><td>Unoffacial Transcript</td></tr>
+              </tbody>
+            </table>
 
+        </aside>
 
-      <aside class="academics">Academics
+     </div>
 
-          <table class="t_data">
-            <thead style="padding:1px"></thead>
-            <tbody>
-              <tr><td>Shopping Cart</td></tr>
-              <tr><td>Course History</td></tr>
-              <tr><td>Course Catalog</td></tr>
-              <tr><td>Enroll</td></tr>
-              <tr><td>Academic Requirements</td></tr>
-              <tr><td>Unoffacial Transcript</td></tr>
-            </tbody>
-          </table>
+  </div>
 
-      </aside>
-
-   </div>
 
 
 </body>

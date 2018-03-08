@@ -1,0 +1,70 @@
+
+
+
+.container {
+  // map areas
+  .search-options {
+    grid-area: search;
+  }
+
+  .academics {
+    grid-area: academics;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+
+  img {
+    display: inline;
+    height: 27px;
+    width: 45px;;
+    margin: auto;
+    //furthur adjustion needed
+  }
+
+  i {
+    font-size: 25px;
+    color: white;
+    width: 35px;
+    padding-left: 20px;
+  }
+
+   .wrapper{
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+          "search"
+   }
+
+
+
+
+// tablet
+  @media(min-width:480px){
+
+  }
+
+// desktop
+  @media(min-width:768px){
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: block;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 4fr 1fr;
+      grid-template-areas:
+          "search academics"
+
+    }
+
+  }
+
+}
