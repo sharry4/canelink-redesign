@@ -51,15 +51,15 @@ display: none;
 }
 
 
-.button {
-   background-color: $green;
+.button1 {
+   background-color: #D8D8D8;
    border: none;
-   color: white;
-   padding: 15px 32px;
+   color: black;
+   padding: 10px 20px;
    text-align: center;
    text-decoration: none;
    display: inline-block;
-   font-size: 16px;
+   font-size: 10px;
 
 }
 
@@ -106,16 +106,4 @@ table.t_data tbody th, table.t_data tbody td
   content: ' \25CF';
   font-size: 30px;
   color: yellow;
-}
-
-.button1 {
-   background-color: grey;
-   border: none;
-   color: black;
-   padding: 10px 20px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 10px;
-
 }
