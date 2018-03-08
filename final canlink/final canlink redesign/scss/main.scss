@@ -1,5 +1,9 @@
-$orange:#F47321;
-$green:#005030;
+@import "layout";
+@import "vars";
+
+
+
+// haven't checked content
 
 .bg-orange{
   background-color: $orange;
@@ -27,23 +31,17 @@ body {
    font-family: "Arial", Helvetica, sans-serif;
 }
 
-@media (max-width: 991px) {
-.hide-on-mobile {
-display:none;
-}
-}
-
-@media (min-width: 1024 px) {
-  .two-column{
-    grid-template-columns: 70% 30%;
-  }
-}
-
-@media (min-width: 992px) {
-.hide-on-desktop {
-display: none;
-}
-}
+// @media (min-width: 1024 px) {
+//   .two-column{
+//     grid-template-columns: 70% 30%;
+//   }
+// }
+//
+// @media (min-width: 992px) {
+// .hide-on-desktop {
+// display: none;
+// }
+// }
 
 
 .custom-select{
