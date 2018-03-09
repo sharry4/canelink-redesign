@@ -1,5 +1,6 @@
-@import "layout";
 @import "vars";
+@import "layout";
+
 
 
 
@@ -63,7 +64,7 @@ body {
 
 table.t_data{
     /* border: 1px; - **EDITED** - doesn't seem like influences here */
-    background-color: #080;
+    // background-color: #080;
     border-spacing: 1px;
     margin: 0 auto 0 auto;
 }
@@ -74,8 +75,6 @@ table.t_data, , th, td{
 
 table.t_data thead th, table.t_data thead td
 {
-
-
     // border: #080 0px solid;/* - **EDITED** - doesn't seem like influences here */
     padding: 5px;
     margin: 1px;
