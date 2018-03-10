@@ -21,13 +21,14 @@
       </div>
       <i class="fas fa-angle-left"></i>
       <div class="sub-nav mobile page-indicator text-white">
-
         Class Search
       </div>
 
 
       <div class="nav desktop hide-on-mobile bg-orange text-white grid-container four-column">
         <img src="img/um_logo.png" alt="UM logo">
+
+        <!-- change to nav if have time -->
         <div class="text-center"> Home | Student Center | More</div>
         <div class="bg-green text-white desktop">
           Academics > Class Search
@@ -44,14 +45,15 @@
           <div class="basic-search">
 
 
-              <div>
+              <div class="dropdown">
                   Term
-                  <br><select class="dropdown">
-                           <option value="Spring2018">Spring 2018</option>
-                           <option value="Fall2017">Fall 2017</option>
-                           <option value="Spring2018">Spring 2018</option>
-                           <option value="Summer2018">Summer 2018</option>
-                        </select>
+                  <br>
+                  <select class="dropdown-selection">
+                     <option value="Spring2018">Spring 2018</option>
+                     <option value="Fall2017">Fall 2017</option>
+                     <option value="Spring2018">Spring 2018</option>
+                     <option value="Summer2018">Summer 2018</option>
+                  </select>
               </div>
               <div>
                 Subject
@@ -67,9 +69,9 @@
                      </select>
               </div>
 
-              <div>
+              <div class="dropdown">
                 Academic Career
-                <br><select>
+                <br><select class="dropdown-selection">
                        <option value="Spring2018">Any Academic Career</option>
                        <option value="Spring2018">Graduate</option>
                     </select>
@@ -87,9 +89,9 @@
 
           </div>
 
-          <div class="additional-search">
+          <h1>Additional Search</h1>
 
-              <h1>Additional Search</h1>
+          <div class="additional-search">
 
               <div class="slider">
                  Time Range
@@ -131,16 +133,16 @@
                   <div> MON TUE WED THU FRI SAT SUN</div>
               </div>
 
-            <div>
+            <div class="dropdown">
               Campus/Location
-              <br><select>
+              <br><select class="dropdown-selection">
                  <option value="Spring2018">Any Campus/Location</option>
               </select>
             </div>
 
-            <div>
+            <div class="dropdown">
               Building
-                <br><select>
+                <br><select class="dropdown-selection">
                    <option value="Spring2018">Any building</option>
                 </select>
             </div>

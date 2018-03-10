@@ -47,22 +47,23 @@
   padding-left: 20px;
   padding-right: 20px;
   color: #4A4A4A; }
-.container .basic-search {
+.container .basic-search, .container .additional-search {
   padding-left: 20px;
   font-size: 14px; }
-.container .dropdown {
-  vertical-align: middle;
+.container .dropdown-selection {
+  color: #4A4A4A;
+  font-size: 15px;
+  font-family: "Helvetica";
+  padding-left: 10px;
   height: 30px;
-  font-size: 1.4rem;
   width: 90%; }
-  .container .dropdown:after {
-    content: '\25BC';
-    position: absolute;
-    top: 0.6rem;
-    right: 0.5em;
-    color: #515151;
-    font-size: 1.2rem;
-    pointer-events: none; }
+.container .dropdown:after {
+  content: '\25BC';
+  position: absolute;
+  padding-top: 4px;
+  color: #4A4A4A;
+  font-size: 12px;
+  pointer-events: none; }
 .container select {
   -webkit-appearance: none;
   -moz-appearance: none;

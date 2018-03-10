@@ -75,28 +75,37 @@
   .wrapper {
     padding-left: 20px;
     padding-right: 20px;
-    color: $basci-text-color;
+    color: $basic-color;
   }
 
-  .basic-search {
+  .basic-search, .additional-search {
     padding-left: 20px;
     font-size: 14px;
   }
 
-  .dropdown {
-    vertical-align: middle;
+// restyle dropdown
+  .dropdown-selection {
+    color: $basic-color;
+    font-size: 15px;
+    font-family: "Helvetica";
+    padding-left: 10px;
     height: 30px;
-    font-size: 1.4rem;
     width: 90%;
+  }
+
+  .dropdown {
     &:after {
-        content: '\25BC';
-        position: absolute;
-        top: 0.6rem;
-        right: 0.5em;
-        color: #515151;
-        font-size: 1.2rem;
-        pointer-events: none;
-      }
+      content: '\25BC';
+      position: absolute;
+      padding-top: 4px;
+
+      // NEEDS FIXING
+      // padding-right:400px;
+
+      color: $basic-color;
+      font-size: 12px;
+      pointer-events: none;
+    }
   }
 
   select{
