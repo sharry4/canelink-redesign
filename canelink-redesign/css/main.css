@@ -52,6 +52,7 @@
   font-size: 14px; }
 .container .dropdown-selection {
   color: #4A4A4A;
+  border-color: #979797;
   background: transparent;
   font-size: 15px;
   font-family: "Helvetica";
@@ -75,7 +76,10 @@
 .container .textfeild {
   box-sizing: border-box;
   height: 30px;
-  width: 90%; }
+  width: 90%;
+  appearance: none;
+  border-color: #979797;
+  border-width: 1px; }
 @media (min-width: 768px) {
   .container .mobile {
     display: none; }
