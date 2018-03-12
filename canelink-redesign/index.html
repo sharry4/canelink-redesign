@@ -45,7 +45,7 @@
           <div class="basic-search">
 
 
-              <div class="dropdown">
+              <div class="dropdown search-object">
                   Term
                   <br>
                   <select class="dropdown-selection">
@@ -55,21 +55,22 @@
                      <option value="Summer2018">Summer 2018</option>
                   </select>
               </div>
-              <div>
-                Subject
-                  <br><select>
-                        <option value="CIM">CIM</option>
-                      </select>
-              </div>
 
-              <div>
-                Class number
-                <br><select>
-                        <option value=>795</option>
-                     </select>
-              </div>
+              <form>
 
-              <div class="dropdown">
+                  <div class="search-object">
+                    Subject
+                      <br><input class="textfeild" type="text" name="firstname"><br>
+                  </div>
+
+                  <div class="search-object">
+                    Class number
+                    <br><input class="textfeild" type="text" name="firstname"><br>
+                  </div>
+
+              </form>
+
+              <div class="dropdown search-object">
                 Academic Career
                 <br><select class="dropdown-selection">
                        <option value="Spring2018">Any Academic Career</option>
@@ -77,7 +78,7 @@
                     </select>
               </div>
 
-              <div>
+              <div class="search-object">
                 <label class="container">
                        <input type="checkbox">
                        <span class="checkmark"></span>
@@ -93,12 +94,12 @@
 
           <div class="additional-search">
 
-              <div class="slider">
+              <div class="slider search-object">
                  Time Range
                  <br><input type="range" min="1" max="100" value="50" class="slider" id="myRange">
               </div>
 
-              <div class="day-selection">
+              <div class="day-selection search-object">
                  <p>Day of Week</p>
 
                   <label class="container">
@@ -133,14 +134,14 @@
                   <div> MON TUE WED THU FRI SAT SUN</div>
               </div>
 
-            <div class="dropdown">
+            <div class="dropdown search-object">
               Campus/Location
               <br><select class="dropdown-selection">
                  <option value="Spring2018">Any Campus/Location</option>
               </select>
             </div>
 
-            <div class="dropdown">
+            <div class="dropdown search-object">
               Building
                 <br><select class="dropdown-selection">
                    <option value="Spring2018">Any building</option>

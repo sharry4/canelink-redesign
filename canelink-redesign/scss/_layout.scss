@@ -86,6 +86,7 @@
 // restyle dropdown
   .dropdown-selection {
     color: $basic-color;
+    background: transparent;
     font-size: 15px;
     font-family: "Helvetica";
     padding-left: 10px;
@@ -98,6 +99,7 @@
       content: '\25BC';
       position: absolute;
       padding-top: 4px;
+
 
       // NEEDS FIXING
       // padding-right:400px;
@@ -114,6 +116,17 @@
     appearance: none;
     border-radius: 0;
   }
+
+  .search-object {
+    margin-bottom: 20px;
+  }
+
+  .textfeild {
+    box-sizing: border-box;
+    height: 30px;
+    width: 90%;
+  }
+
 
 
 

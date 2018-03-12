@@ -52,6 +52,7 @@
   font-size: 14px; }
 .container .dropdown-selection {
   color: #4A4A4A;
+  background: transparent;
   font-size: 15px;
   font-family: "Helvetica";
   padding-left: 10px;
@@ -69,6 +70,12 @@
   -moz-appearance: none;
   appearance: none;
   border-radius: 0; }
+.container .search-object {
+  margin-bottom: 20px; }
+.container .textfeild {
+  box-sizing: border-box;
+  height: 30px;
+  width: 90%; }
 @media (min-width: 768px) {
   .container .mobile {
     display: none; }
