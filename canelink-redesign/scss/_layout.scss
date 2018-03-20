@@ -26,14 +26,13 @@
   }
 
 
-  img {
+  .logo1 {
     height: 27px;
-    width: 45px;;
+    width: 45px;
     margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     display: block;
-    //furthur adjustion needed
   }
 
   .fa-bars {
@@ -117,7 +116,7 @@
   }
 
   .search-object {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .textfeild {
@@ -129,7 +128,51 @@
     border-width: 1px;
   }
 
+  .button1, .button2 {
+     background-color: $button-color;
+     box-sizing: border-box;
+     color: $basic-color;
+     height: 31px;
+     width: 125px;
+     padding-top: 7px;
+     text-align: center;
+     // display: inline-block;
+     font-size: 16px;
+  }
 
+  .button2 {
+    float: right;
+    margin-right: 10%;
+  }
+
+  .basic-search {
+    margin-bottom: 30px;
+  }
+
+  .additional-search {
+    font-size: 12px;
+    .dropdown-selection {
+      font-size: 12px;
+    }
+  }
+
+  .slider {
+    width: 94%;
+  }
+
+  .day-check {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+
+  .day-choice {
+    width: 90%;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
 
 
 //button Class
@@ -157,6 +200,56 @@
       display: block;
     }
 
+    .logo2 {
+      height: 50px;
+      width: 80px;
+
+      padding-top: 15px;
+      position: absolute;
+    }
+
+    .nav {
+      text-align: center;
+      height: 75px;
+      font-size: 18px;
+      font-weight: lighter;
+    }
+
+
+      nav ul {
+          padding-top: 35px;
+          padding-left: 3px;
+          margin-top: 0px;
+          li {
+            display: inline-block;
+            list-style-type: none;
+            &:after {
+              content: " |";
+            }
+            &:last-child:after {
+                content: "";
+            }
+          }
+      }
+
+      .current-page {
+        font-weight: bold;
+      }
+
+    .sub-nav {
+      height: 23px;
+      font-size: 15px;
+      padding-top: 5px;
+
+    }
+
+    .header-container {
+      max-width: 960px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: 0 auto;
+    }
+
     .wrapper {
       max-width: 960px;
       padding-left: 30px;
@@ -165,12 +258,39 @@
 
 
       display: grid;
-      grid-gap: 20px;
+      grid-gap: 60px;
       grid-template-columns: 4fr 1fr;
       grid-template-areas:
           "search academics"
-
     }
+
+    h3 {
+      color: $green;
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+
+    aside {
+      font-size: 13px;
+      font-weight: bold;
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          list-style-type: none;
+          padding: 5px;
+          border-top: 1px solid #979797;
+          border-right: 1px solid #979797;
+          border-left: 1px solid #979797;
+          &:last-child {
+              border-bottom: 1px solid #979797;
+          }
+
+        }
+      }
+    }
+
+
 
   }
 

@@ -15,22 +15,31 @@
 
     <header>
 
-      <div class="nav mobile hide-on-desktop bg-orange"><!-- grid-container four-column -->
+      <div class="nav mobile bg-orange"><!-- grid-container four-column -->
         <i class="fas fa-bars"></i>
-        <img class="logo" src="img/um_logo.png" alt="UM logo">
+        <img class="logo1 mobile" src="img/um_logo.png" alt="UM logo">
       </div>
-      <i class="fas fa-angle-left"></i>
+      <i class="fas fa-angle-left mobile"></i>
       <div class="sub-nav mobile page-indicator text-white">
         Class Search
       </div>
 
 
-      <div class="nav desktop hide-on-mobile bg-orange text-white grid-container four-column">
-        <img src="img/um_logo.png" alt="UM logo">
-
-        <!-- change to nav if have time -->
-        <div class="text-center"> Home | Student Center | More</div>
-        <div class="bg-green text-white desktop">
+      <div class="nav desktop bg-orange text-white">
+        <div class="header-container desktop">
+          <img class="logo2 desktop" src="img/um_logo.png" alt="UM logo">
+            <!-- change to nav if have time -->
+            <nav>
+              <ul>
+                <li>Home</li>
+                <li class="current-page">Student Center</li>
+                <li>More</li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+      <div class="sub-nav bg-green text-white desktop">
+        <div class="header-container desktop">
           Academics > Class Search
         </div>
       </div>
@@ -85,8 +94,8 @@
                        </label> Show open class only
               </div>
 
-              <div class="button">Clear</div>
-              <div class="button">Search</div>
+              <div class="button1">Clear</div>
+              <div class="button2">Search</div>
 
           </div>
 
@@ -102,37 +111,46 @@
               <div class="day-selection search-object">
                  Day of Week
                  <br>
+                 <div class="day-check">
+                   <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                   </label>
+                   <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                   </label>
+                   <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                          </label>
+                   <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                   </label>
+                   <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                   </label>
+                   <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                          </label>
+                   <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                   </label>
+                 </div>
 
-                  <label class="container">
-                         <input type="checkbox">
-                         <span class="checkmark"></span>
-                  </label>
-                  <label class="container">
-                         <input type="checkbox">
-                         <span class="checkmark"></span>
-                  </label>
-                  <label class="container">
-                         <input type="checkbox">
-                         <span class="checkmark"></span>
-                         </label>
-                  <label class="container">
-                         <input type="checkbox">
-                         <span class="checkmark"></span>
-                  </label>
-                  <label class="container">
-                         <input type="checkbox">
-                         <span class="checkmark"></span>
-                  </label>
-                  <label class="container">
-                         <input type="checkbox">
-                         <span class="checkmark"></span>
-                         </label>
-                  <label class="container">
-                         <input type="checkbox">
-                         <span class="checkmark"></span>
-                  </label>
-
-                  <div> MON TUE WED THU FRI SAT SUN</div>
+                  <div class="day-choice">
+                    <span>MON</span>
+                    <span>TUE</span>
+                    <span>WED</span>
+                    <span>THU</span>
+                    <span>FRI</span>
+                    <span>SAT</span>
+                    <span>SUN</span>
+                  </div>
               </div>
 
             <div class="dropdown search-object">
@@ -156,18 +174,14 @@
         <aside class="academics desktop">
 
             <h3>Academics</h3>
-
-            <table class="t_data">
-              <thead style="padding:1px"></thead>
-              <tbody>
-                <tr><td>Shopping Cart</td></tr>
-                <tr><td>Course History</td></tr>
-                <tr><td>Course Catalog</td></tr>
-                <tr><td>Enroll</td></tr>
-                <tr><td>Academic Requirements</td></tr>
-                <tr><td>Unoffacial Transcript</td></tr>
-              </tbody>
-            </table>
+              <ul>
+                <li>Shopping Cart</li>
+                <li>Course History</li>
+                <li>Course Catalog</li>
+                <li>Enroll</li>
+                <li>Academic Requirements</li>
+                <li>Unoffacial Transcript</li>
+              </ul>
 
         </aside>
 
