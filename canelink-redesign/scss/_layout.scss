@@ -203,6 +203,26 @@
   }
 
 
+  //Class-deatil page
+
+  .class-detail {
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        list-style-type: none;
+        padding: 5px;
+        border-bottom: 0.1px solid #979797;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+      }
+    }
+  }
+
+
 //button Class
 // {
 //   background: color;
