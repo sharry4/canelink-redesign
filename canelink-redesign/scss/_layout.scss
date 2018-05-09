@@ -16,6 +16,12 @@
     display: none;
   }
 
+  .buttons {
+    .button1, .button2 {
+      display: none;
+    }
+  }
+
 
   .wrapper {
      display: grid;
@@ -64,6 +70,15 @@
 
   }
 
+  a {
+    text-decoration: none;
+    color: $basic-color;
+  }
+
+  a:hover {
+    color: orange;
+  }
+
   h1 {
     border-bottom: 1px solid #979797;
     font-size: 20px;
@@ -82,6 +97,10 @@
     font-size: 14px;
   }
 
+  .nav {
+    background-color: $orange;
+  }
+
 // restyle dropdown
   .dropdown-selection {
     color: $basic-color;
@@ -98,8 +117,8 @@
     &:after {
       content: '\25BC';
       position: absolute;
-      padding-top: 7px;
-
+      padding-top: 8px;
+      left: 80%;
       // NEEDS FIXING
       // padding-right:400px;
       color: $basic-color;
@@ -133,16 +152,33 @@
      box-sizing: border-box;
      color: $basic-color;
      height: 31px;
-     width: 125px;
+     width: 20%;
      padding-top: 7px;
      text-align: center;
-     // display: inline-block;
-     font-size: 16px;
+     display: inline-block;
+     font-size: 13px;
   }
 
   .button2 {
     float: right;
     margin-right: 10%;
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+
+  .button3 {
+    float: right;
+    background-color: $button-color;
+    box-sizing: border-box;
+    color: $basic-color;
+    height: 31px;
+    width: 20%;
+    padding-top: 7px;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
   }
 
   .basic-search {
@@ -223,6 +259,9 @@
   }
 
 
+
+
+
 //button Class
 // {
 //   background: color;
@@ -244,8 +283,15 @@
     .mobile {
       display: none;
     }
+
     .desktop {
       display: block;
+    }
+
+    .buttons {
+      .button1, .button2 {
+        display: inline-block;
+      }
     }
 
     .logo2 {
@@ -307,9 +353,15 @@
 
       display: grid;
       grid-gap: 60px;
-      grid-template-columns: 4fr 1fr;
+      grid-template-columns: 3fr 1fr;
       grid-template-areas:
           "search academics"
+    }
+
+    .dropdown {
+      &:after {
+        left: 58%;
+      }
     }
 
     h3 {
@@ -320,7 +372,7 @@
 
     aside {
       font-size: 13px;
-      font-weight: bold;
+      font-weight: lighter;
       ul {
         padding: 0;
         margin: 0;
